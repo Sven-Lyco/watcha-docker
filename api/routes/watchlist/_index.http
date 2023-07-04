@@ -1,0 +1,35 @@
+@baseURL = http://localhost:4000/api/watchlist
+
+### GET/watchlist
+GET {{baseURL}}/
+
+### POST/series/id/name/category
+### add a series to the mongodb collection list
+POST {{baseURL}}/series/94605/Arcane/serie
+Content-Type: application/json
+
+{
+    "id": "94605",
+    "title":"",
+    "name": "Arcane",
+    "posterPath": "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+    "category": "serie"
+}
+
+### POST/movie/id/title/category
+### add a movie to the mongodb collection list
+POST {{baseURL}}/movie/646389/Plane/film
+Content-Type: application/json
+
+{
+    "id": "646389",
+    "title": "Plane",
+    "name":"",
+    "posterPath": "/2JMsLDkl0JE3Bn4juJ8HcidglVe.jpg",
+    "category": "film"
+}
+
+### GET/deleteId
+### Example after POST "_id": "64a2ca1e3f6760bdae6c8551"
+### delete a movie or series from the mongodb collection list
+GET {{baseURL}}/64a2caae3f6760bdae6c8586

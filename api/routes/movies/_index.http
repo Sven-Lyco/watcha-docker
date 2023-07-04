@@ -1,0 +1,13 @@
+@baseURL = http://localhost:4000/api/movies
+
+### GET/popularMovies
+GET {{baseURL}}/popular
+
+### GET/upcomingMovies
+GET {{baseURL}}/upcoming
+
+### GET/now-playingMovies
+GET {{baseURL}}/now-playing
+
+### GET/moviedetails
+GET {{baseURL}}/moviedetails/9615

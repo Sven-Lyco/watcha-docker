@@ -1,0 +1,13 @@
+@baseURL = http://localhost:4000/api/watchedMovies
+
+### GET/watchedMovies
+GET {{baseURL}}/
+
+### POST/movieId/title
+### add a movie to the mongodb collection list
+POST {{baseURL}}/27576/Salt
+
+### GET/deleteId
+### delete a movie from the mongodb collection list
+### Example after POST "_id": "64a2c80e3f6760bdae6c84e9"
+GET {{baseURL}}/64a2c8273f6760bdae6c84ec

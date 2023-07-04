@@ -1,0 +1,4 @@
+@baseURL = http://localhost:4000/api/person
+
+### GET/persondetails
+GET {{baseURL}}/116277
