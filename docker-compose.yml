@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  reverse_proxy:
+    image: nginx
+    container_name: nginx_reverse_proxy
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - api
+      - client
+    networks:
+      - watcha_network
+
+  api:
+    build: ./api
+    container_name: api_backend
+    ports:
+      - '4000:4000'
+    networks:
+      - watcha_network
+
+  client:
+    depends_on:
+      - api
+    build: ./client
+    container_name: client_frontend
+    ports:
+      - '3000:3000'
+    networks:
+      - watcha_network
+
+networks:
+  watcha_network:
