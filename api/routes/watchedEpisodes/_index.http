@@ -1,0 +1,13 @@
+@baseURL = http://localhost:4000/api/watchedEpisodes
+
+### GET/watchedEpisodes
+GET {{baseURL}}/
+
+### POST/episodeId
+### add an episode to the mongodb collection list
+POST {{baseURL}}/1953812
+
+### GET/deleteId
+### delete an episode from the mongodb collection list
+### Example after POST "_id": "64a2c7213f6760bdae6c84b0"
+GET  {{baseURL}}/64a43f4f0f94d526170bcd7c

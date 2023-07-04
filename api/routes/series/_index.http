@@ -1,0 +1,16 @@
+@baseURL = http://localhost:4000/api/series
+
+### GET/popularSeries
+GET {{baseURL}}/popular
+
+### GET/seriesTopRated
+GET {{baseURL}}/toprated
+
+### GET/seriesOnAir
+GET {{baseURL}}/onair
+
+### GET/seriesDetails
+GET {{baseURL}}/seriesdetails/94605
+
+### GET/seriesDetailsPerSeason
+GET {{baseURL}}/94605/season/1
