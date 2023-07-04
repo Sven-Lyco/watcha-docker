@@ -1,0 +1,14 @@
+{
+  "name": "watcha-docker",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npm run prettier:check",
+    "prettier:write": "npx prettier --write .",
+    "prettier:check": "npx prettier --check ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
